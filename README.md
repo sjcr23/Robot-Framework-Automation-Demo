@@ -36,8 +36,7 @@ A continuación se detalla una breve guía de para instalar el entorno de desarr
       pip3 install --upgrade robotframework-seleniumlibrary
       pip3 install --upgrade robotframework-selenium2library
 
-- Chrome WebDriver
-Es importante revisar la versión del navegador que estén utilizando, en mi caso es la 105.x...
+- Chrome WebDriver (revisar la versión del navegador que estén utilizando, en mi caso es la 105.x...)
   - [chromedriver_linux64.zip](https://chromedriver.storage.googleapis.com/105.0.5195.52/chromedriver_linux64.zip)
 
 ### Windows
