@@ -1,5 +1,6 @@
 *** Settings ***
-Library           SeleniumLibrary
+Library     SeleniumLibrary
+
 
 *** Keywords ***
 the user opens the browser
