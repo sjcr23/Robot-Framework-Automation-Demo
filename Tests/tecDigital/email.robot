@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    /home/sjcr23/Repos/ic-6831-proyectoII-demo/Resources/credentials.resource
+Resource    ../Resources/credentials.resource
 Resource    variables.resource
 Resource    keywords.resource
 
