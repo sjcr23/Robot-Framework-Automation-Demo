@@ -50,11 +50,12 @@ Write the body
     And Element Text Should Be    xpath:${bodyField}    ${empty}
     Then the user writes a message    ${bodyField}    ${body}
 
-# Sends the email
-#    Given Title Should Be    Sitio Principal
-#    And Element Text Should Not Be    xpath:${subjectField}    ${empty}
-#    And Element Text Should Not Be    xpath:${bodyField}    ${empty}
-#    Then the user clicks the button    ${sendEmail}
+Sends the email
+    Given Title Should Be    Sitio Principal
+    And Element Text Should Not Be    xpath:${subjectField}    ${empty}
+    And Element Text Should Not Be    xpath:${bodyField}    ${empty}
+    And the user clicks the button    ${sendEmail}
+    Then Title Should Be    Aseguramiento De La Calidad Del Software GR 20
 
 Close the browser
     Sleep    3s
