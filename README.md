@@ -9,7 +9,7 @@ Para la ejecución de esta demostración es necesario descargar:
 - [SeleniumLibrary](https://github.com/robotframework/SeleniumLibrary/#installation)
 - [Chrome WebDriver](https://chromedriver.chromium.org/downloads)
 
-Y además crear en el directorio ```Resources``` un archivo llamado ```credentials.resource``` con sus respectivas credenciales de la siguiente forma:
+Y además crear en el directorio ```/Tests/Resources``` un archivo llamado ```credentials.resource``` con sus respectivas credenciales de la siguiente forma:
 
       *** Variables ***
       ${email}=       suCorreo@estudiantec.cr
