@@ -1,5 +1,7 @@
 # Robot Framework Demo
 
+Esta demo busca poner a prueba funcionalidades de Google así como del tecDigital. La idea principal es hacer búsquedas simples y enviar un correo a través del tecDigital a la profesora.
+
 Para la ejecución de esta demostración es necesario descargar:
 
 - [Python3](https://www.python.org/downloads/)
