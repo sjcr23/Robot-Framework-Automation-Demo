@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ../Resources/credentials.resource
-Resource    variables.resource
-Resource    keywords.resource
+Resource    ../Resources/variables.resource
+Resource    ../Resources/keywords.resource
 
 
 *** Test Cases ***
