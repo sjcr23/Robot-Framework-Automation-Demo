@@ -350,4 +350,4 @@ MigrationBackup/
 .ionide/
 
 # Credentials
-Resources/credentials.resource
+*credentials.resource
