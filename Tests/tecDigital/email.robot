@@ -52,9 +52,8 @@ Write the body
 
 Sends the email
     Given Title Should Be    Sitio Principal
-    And Element Text Should Not Be    xpath:${subjectField}    ${empty}
-    And Element Text Should Not Be    xpath:${bodyField}    ${empty}
     And the user clicks the button    ${sendEmail}
+    Sleep    3s
     Then Title Should Be    Aseguramiento De La Calidad Del Software GR 20
 
 Close the browser

@@ -5,7 +5,7 @@ Resource    ../Resources/keywords.resource
 
 
 *** Variables ***
-${classmateEmail}=          pablo.mora@estudiantec.cr
+${classmateEmail}=          sebasbogantes6@estudiantec.cr
 ${classmatePassword}=       estaEsUnaConstraseñaFalsa
 
 
