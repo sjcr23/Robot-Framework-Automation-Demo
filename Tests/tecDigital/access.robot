@@ -4,6 +4,11 @@ Resource    ../Resources/variables.resource
 Resource    ../Resources/keywords.resource
 
 
+*** Variables ***
+${classmateEmail}=          pablo.mora@estudiantec.cr
+${classmatePassword}=       estaEsUnaConstraseñaFalsa
+
+
 *** Test Cases ***
 Login with valid credentials
     [Documentation]    Access to tecDigital with valid credentials
@@ -19,7 +24,7 @@ Login with invalid credentials
     [Documentation]    Access to tecDigital with invalid credentials
     [Tags]    regression, valid
     Given the user opens the browser    ${tecDigital}    ${browser}
-    When the user input credentials    f.ugaldegreen@estudiantec.cr    "el pepe"
+    When the user input credentials    ${classmateEmail}    ${classmatePassword}
     And the user clicks the button    ${login}
     Sleep    2s
     Then Title Should Be    tecDigital | Ingresar
