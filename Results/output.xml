@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on linux)" generated="20220927 22:03:02.203" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="/home/sjcr23/Repos/ic-6831-proyectoII-demo/Tests">
+<suite id="s1-s1" name="Google Chrome" source="/home/sjcr23/Repos/ic-6831-proyectoII-demo/Tests/Google Chrome">
+<suite id="s1-s1-s1" name="Search" source="/home/sjcr23/Repos/ic-6831-proyectoII-demo/Tests/Google Chrome/search.robot">
+<test id="s1-s1-s1-t1" name="Search 'wall·e' on Google" line="13">
+<kw name="Given The user opens">
+<arg>${google}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220927 22:03:02.527" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20220927 22:03:02.525" endtime="20220927 22:03:06.020"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:02.522" endtime="20220927 22:03:06.021"/>
+</kw>
+<kw name="And The user searchs">
+<arg>wall·e</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${query}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:06.023" level="INFO">Typing text 'wall·e' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220927 22:03:06.022" endtime="20220927 22:03:06.084"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220927 22:03:06.085" level="INFO">Sending key(s) ('ENTER',) to name:q element.</msg>
+<msg timestamp="20220927 22:03:06.353" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20220927 22:03:06.354" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20220927 22:03:06.085" endtime="20220927 22:03:09.464"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:06.021" endtime="20220927 22:03:09.465"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:10.466" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:03:09.465" endtime="20220927 22:03:10.466"/>
+</kw>
+<kw name="Then Page Should Contain" library="SeleniumLibrary">
+<arg>WALL·E - Wikipedia, la enciclopedia libre</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220927 22:03:10.499" level="INFO">Current page contains text 'WALL·E - Wikipedia, la enciclopedia libre'.</msg>
+<status status="PASS" starttime="20220927 22:03:10.467" endtime="20220927 22:03:10.499"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220927 22:03:10.500" endtime="20220927 22:03:10.561"/>
+</kw>
+<doc>Search 'wall·e' on Google Chrome</doc>
+<tag>usability</tag>
+<status status="PASS" starttime="20220927 22:03:02.518" endtime="20220927 22:03:10.562"/>
+</test>
+<test id="s1-s1-s1-t2" name="Search 'tec cartago' on Google images" line="22">
+<kw name="Given The user opens">
+<arg>${googleImages}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220927 22:03:10.567" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/imghp'.</msg>
+<status status="PASS" starttime="20220927 22:03:10.567" endtime="20220927 22:03:13.535"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:10.566" endtime="20220927 22:03:13.535"/>
+</kw>
+<kw name="And The user searchs">
+<arg>tec cartago</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${query}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:13.537" level="INFO">Typing text 'tec cartago' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220927 22:03:13.536" endtime="20220927 22:03:13.598"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220927 22:03:13.599" level="INFO">Sending key(s) ('ENTER',) to name:q element.</msg>
+<msg timestamp="20220927 22:03:13.864" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20220927 22:03:13.864" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20220927 22:03:13.598" endtime="20220927 22:03:15.952"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:13.536" endtime="20220927 22:03:15.952"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:16.954" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:03:15.953" endtime="20220927 22:03:16.954"/>
+</kw>
+<kw name="Then Page Should Contain Image" library="SeleniumLibrary">
+<arg>${tecImage}</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20220927 22:03:16.969" level="INFO">Current page contains image '//*[@id="islrg"]/div[1]/div[3]/a[1]/div[1]/img'.</msg>
+<status status="PASS" starttime="20220927 22:03:16.955" endtime="20220927 22:03:16.970"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220927 22:03:16.970" endtime="20220927 22:03:17.029"/>
+</kw>
+<doc>Search 'tec cartago' on Google Images</doc>
+<tag>usability</tag>
+<status status="PASS" starttime="20220927 22:03:10.564" endtime="20220927 22:03:17.030"/>
+</test>
+<status status="PASS" starttime="20220927 22:03:02.264" endtime="20220927 22:03:17.032"/>
+</suite>
+<status status="PASS" starttime="20220927 22:03:02.260" endtime="20220927 22:03:17.035"/>
+</suite>
+<suite id="s1-s2" name="tecDigital" source="/home/sjcr23/Repos/ic-6831-proyectoII-demo/Tests/tecDigital">
+<suite id="s1-s2-s1" name="Access" source="/home/sjcr23/Repos/ic-6831-proyectoII-demo/Tests/tecDigital/access.robot">
+<test id="s1-s2-s1-t1" name="Login with valid credentials" line="8">
+<kw name="Given the user opens the browser" library="keywords">
+<arg>${tecDigital}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220927 22:03:17.074" level="INFO">Opening browser 'Chrome' to base url 'https://tecdigital.tec.ac.cr/register/?return_url=/dotlrn/index'.</msg>
+<status status="PASS" starttime="20220927 22:03:17.073" endtime="20220927 22:03:20.361"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:17.071" endtime="20220927 22:03:20.362"/>
+</kw>
+<kw name="When the user input credentials" library="keywords">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:21.364" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:03:20.363" endtime="20220927 22:03:21.365"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:newFormEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:21.366" level="INFO">Typing text 'jd.castro23r@estudiantec.cr' into text field 'name:newFormEmail'.</msg>
+<status status="PASS" starttime="20220927 22:03:21.366" endtime="20220927 22:03:21.453"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:22.454" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:03:21.453" endtime="20220927 22:03:22.455"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>name:newFormPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:22.456" level="INFO">Typing password into text field 'name:newFormPassword'.</msg>
+<msg timestamp="20220927 22:03:22.482" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220927 22:03:22.526" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220927 22:03:22.455" endtime="20220927 22:03:22.526"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:20.362" endtime="20220927 22:03:22.527"/>
+</kw>
+<kw name="And the user clicks the button" library="keywords">
+<arg>${login}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:24.529" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:22.528" endtime="20220927 22:03:24.530"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:${button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:24.531" level="INFO">Clicking element 'xpath://*[@id="new-login"]/div[4]/div/button'.</msg>
+<status status="PASS" starttime="20220927 22:03:24.530" endtime="20220927 22:03:24.568"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:22.527" endtime="20220927 22:03:24.568"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:27.569" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:24.569" endtime="20220927 22:03:27.570"/>
+</kw>
+<kw name="Then Title Should Be" library="SeleniumLibrary">
+<arg>Mi portal</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:03:27.576" level="INFO">Page title is 'Mi portal'.</msg>
+<status status="PASS" starttime="20220927 22:03:27.571" endtime="20220927 22:03:27.576"/>
+</kw>
+<kw name="And logout from tecDigital" library="keywords">
+<arg>${menuIcon}</arg>
+<arg>${logout}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:29.579" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:27.578" endtime="20220927 22:03:29.579"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:${button1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:29.580" level="INFO">Clicking element 'xpath://*[@id="td_menu_responsive_toggle"]/i'.</msg>
+<status status="PASS" starttime="20220927 22:03:29.579" endtime="20220927 22:03:29.615"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:31.616" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:29.615" endtime="20220927 22:03:31.616"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:${button2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:31.617" level="INFO">Clicking element 'xpath://*[@id="menu-left-content"]/nav/li[6]/a'.</msg>
+<status status="PASS" starttime="20220927 22:03:31.617" endtime="20220927 22:03:32.514"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:34.516" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:32.515" endtime="20220927 22:03:34.516"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>tecDigital | Ingresar</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:03:34.520" level="INFO">Page title is 'tecDigital | Ingresar'.</msg>
+<status status="PASS" starttime="20220927 22:03:34.517" endtime="20220927 22:03:34.520"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220927 22:03:34.521" endtime="20220927 22:03:34.580"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:27.577" endtime="20220927 22:03:34.581"/>
+</kw>
+<doc>Access to tecDigital with valid credentials</doc>
+<tag>regression, valid</tag>
+<status status="PASS" starttime="20220927 22:03:17.068" endtime="20220927 22:03:34.582"/>
+</test>
+<test id="s1-s2-s1-t2" name="Login with invalid credentials" line="18">
+<kw name="Given the user opens the browser" library="keywords">
+<arg>${tecDigital}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220927 22:03:34.587" level="INFO">Opening browser 'Chrome' to base url 'https://tecdigital.tec.ac.cr/register/?return_url=/dotlrn/index'.</msg>
+<status status="PASS" starttime="20220927 22:03:34.586" endtime="20220927 22:03:37.359"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:34.585" endtime="20220927 22:03:37.360"/>
+</kw>
+<kw name="When the user input credentials" library="keywords">
+<arg>f.ugaldegreen@estudiantec.cr</arg>
+<arg>"el pepe"</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:38.363" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:03:37.362" endtime="20220927 22:03:38.363"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:newFormEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:38.364" level="INFO">Typing text 'f.ugaldegreen@estudiantec.cr' into text field 'name:newFormEmail'.</msg>
+<status status="PASS" starttime="20220927 22:03:38.364" endtime="20220927 22:03:38.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:39.445" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:03:38.444" endtime="20220927 22:03:39.445"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>name:newFormPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:39.447" level="INFO">Typing password into text field 'name:newFormPassword'.</msg>
+<msg timestamp="20220927 22:03:39.472" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220927 22:03:39.507" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220927 22:03:39.446" endtime="20220927 22:03:39.508"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:37.361" endtime="20220927 22:03:39.509"/>
+</kw>
+<kw name="And the user clicks the button" library="keywords">
+<arg>${login}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:41.511" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:39.511" endtime="20220927 22:03:41.512"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:${button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:41.513" level="INFO">Clicking element 'xpath://*[@id="new-login"]/div[4]/div/button'.</msg>
+<status status="PASS" starttime="20220927 22:03:41.512" endtime="20220927 22:03:41.552"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:39.510" endtime="20220927 22:03:41.552"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:43.554" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:41.553" endtime="20220927 22:03:43.554"/>
+</kw>
+<kw name="Then Title Should Be" library="SeleniumLibrary">
+<arg>tecDigital | Ingresar</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:03:43.559" level="INFO">Page title is 'tecDigital | Ingresar'.</msg>
+<status status="PASS" starttime="20220927 22:03:43.555" endtime="20220927 22:03:43.560"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220927 22:03:43.560" endtime="20220927 22:03:43.621"/>
+</kw>
+<doc>Access to tecDigital with invalid credentials</doc>
+<tag>regression, valid</tag>
+<status status="PASS" starttime="20220927 22:03:34.583" endtime="20220927 22:03:43.622"/>
+</test>
+<status status="PASS" starttime="20220927 22:03:17.043" endtime="20220927 22:03:43.624"/>
+</suite>
+<suite id="s1-s2-s2" name="Email" source="/home/sjcr23/Repos/ic-6831-proyectoII-demo/Tests/tecDigital/email.robot">
+<test id="s1-s2-s2-t1" name="Login with valid credentials" line="8">
+<kw name="Given the user opens the browser" library="keywords">
+<arg>${tecDigital}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220927 22:03:43.641" level="INFO">Opening browser 'Chrome' to base url 'https://tecdigital.tec.ac.cr/register/?return_url=/dotlrn/index'.</msg>
+<status status="PASS" starttime="20220927 22:03:43.641" endtime="20220927 22:03:46.485"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:43.639" endtime="20220927 22:03:46.486"/>
+</kw>
+<kw name="When the user input credentials" library="keywords">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:47.488" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:03:46.487" endtime="20220927 22:03:47.488"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:newFormEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:47.490" level="INFO">Typing text 'jd.castro23r@estudiantec.cr' into text field 'name:newFormEmail'.</msg>
+<status status="PASS" starttime="20220927 22:03:47.489" endtime="20220927 22:03:47.569"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:48.570" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:03:47.570" endtime="20220927 22:03:48.571"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>name:newFormPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:48.572" level="INFO">Typing password into text field 'name:newFormPassword'.</msg>
+<msg timestamp="20220927 22:03:48.598" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220927 22:03:48.641" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220927 22:03:48.571" endtime="20220927 22:03:48.642"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:46.486" endtime="20220927 22:03:48.642"/>
+</kw>
+<kw name="And the user clicks the button" library="keywords">
+<arg>${login}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:50.645" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:48.644" endtime="20220927 22:03:50.645"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:${button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:50.647" level="INFO">Clicking element 'xpath://*[@id="new-login"]/div[4]/div/button'.</msg>
+<status status="PASS" starttime="20220927 22:03:50.646" endtime="20220927 22:03:50.686"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:48.643" endtime="20220927 22:03:50.686"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:53.687" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:50.687" endtime="20220927 22:03:53.688"/>
+</kw>
+<kw name="Then Title Should Be" library="SeleniumLibrary">
+<arg>Mi portal</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:03:54.736" level="INFO">Page title is 'Mi portal'.</msg>
+<status status="PASS" starttime="20220927 22:03:53.689" endtime="20220927 22:03:54.737"/>
+</kw>
+<doc>Access to tecDigital with valid credentials</doc>
+<tag>regression, valid</tag>
+<status status="PASS" starttime="20220927 22:03:43.637" endtime="20220927 22:03:54.738"/>
+</test>
+<test id="s1-s2-s2-t2" name="Show courses" line="17">
+<kw name="Given Title Should Be" library="SeleniumLibrary">
+<arg>Mi portal</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:03:54.745" level="INFO">Page title is 'Mi portal'.</msg>
+<status status="PASS" starttime="20220927 22:03:54.741" endtime="20220927 22:03:54.746"/>
+</kw>
+<kw name="And the user clicks the button" library="keywords">
+<arg>${showCourses}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:56.748" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:54.748" endtime="20220927 22:03:56.749"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:${button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:56.750" level="INFO">Clicking element 'xpath://*[@id="dotlrn-main-dotlrn_class_instance"]/span'.</msg>
+<status status="PASS" starttime="20220927 22:03:56.749" endtime="20220927 22:03:56.788"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:54.746" endtime="20220927 22:03:56.788"/>
+</kw>
+<kw name="Then Page Should Contain" library="SeleniumLibrary">
+<arg>SEMESTRE 2 2022</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220927 22:03:56.806" level="INFO">Current page contains text 'SEMESTRE 2 2022'.</msg>
+<status status="PASS" starttime="20220927 22:03:56.789" endtime="20220927 22:03:56.806"/>
+</kw>
+<doc>Show the current courses of the semester 'IIS2022'</doc>
+<tag>usability</tag>
+<status status="PASS" starttime="20220927 22:03:54.739" endtime="20220927 22:03:56.807"/>
+</test>
+<test id="s1-s2-s2-t3" name="Access SQA portal" line="24">
+<kw name="Given Page Should Contain" library="SeleniumLibrary">
+<arg>SEMESTRE 2 2022</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220927 22:03:56.820" level="INFO">Current page contains text 'SEMESTRE 2 2022'.</msg>
+<status status="PASS" starttime="20220927 22:03:56.811" endtime="20220927 22:03:56.820"/>
+</kw>
+<kw name="And the user clicks the button" library="keywords">
+<arg>${sqa}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:03:58.823" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:03:56.823" endtime="20220927 22:03:58.824"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:${button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 22:03:58.825" level="INFO">Clicking element 'xpath://*[@id="tree-dotlrn_class_instance"]/li[1]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20220927 22:03:58.825" endtime="20220927 22:04:02.470"/>
+</kw>
+<status status="PASS" starttime="20220927 22:03:56.822" endtime="20220927 22:04:02.471"/>
+</kw>
+<kw name="Then Title Should Be" library="SeleniumLibrary">
+<arg>Aseguramiento De La Calidad Del Software GR 20</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:04:02.474" level="INFO">Page title is 'Aseguramiento De La Calidad Del Software GR 20'.</msg>
+<status status="PASS" starttime="20220927 22:04:02.471" endtime="20220927 22:04:02.474"/>
+</kw>
+<doc>Access to the Software Quality Assurance course portal</doc>
+<tag>usability</tag>
+<status status="PASS" starttime="20220927 22:03:56.809" endtime="20220927 22:04:02.475"/>
+</test>
+<test id="s1-s2-s2-t4" name="Access to the email form" line="31">
+<kw name="Given Title Should Be" library="SeleniumLibrary">
+<arg>Aseguramiento De La Calidad Del Software GR 20</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:04:02.483" level="INFO">Page title is 'Aseguramiento De La Calidad Del Software GR 20'.</msg>
+<status status="PASS" starttime="20220927 22:04:02.479" endtime="20220927 22:04:02.483"/>
+</kw>
+<kw name="And the user clicks the button" library="keywords">
+<arg>${teacherEmail}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:04:04.486" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220927 22:04:02.485" endtime="20220927 22:04:04.486"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:${button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220927 22:04:04.488" level="INFO">Clicking element 'xpath://*[@id="main-content"]/div/div[1]/div[2]/ul/li/a[2]'.</msg>
+<status status="PASS" starttime="20220927 22:04:04.487" endtime="20220927 22:04:05.381"/>
+</kw>
+<status status="PASS" starttime="20220927 22:04:02.484" endtime="20220927 22:04:05.381"/>
+</kw>
+<kw name="Then Title Should Be" library="SeleniumLibrary">
+<arg>Sitio Principal</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:04:05.386" level="INFO">Page title is 'Sitio Principal'.</msg>
+<status status="PASS" starttime="20220927 22:04:05.382" endtime="20220927 22:04:05.386"/>
+</kw>
+<kw name="And Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath:${subjectField}</arg>
+<arg>${empty}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220927 22:04:05.388" level="INFO">Verifying element 'xpath://*[@id="msj_asunto"]' contains exact text ''.</msg>
+<status status="PASS" starttime="20220927 22:04:05.387" endtime="20220927 22:04:05.412"/>
+</kw>
+<doc>Access to the email form pannel</doc>
+<tag>usability</tag>
+<status status="PASS" starttime="20220927 22:04:02.477" endtime="20220927 22:04:05.413"/>
+</test>
+<test id="s1-s2-s2-t5" name="Write the subject" line="39">
+<kw name="Given Title Should Be" library="SeleniumLibrary">
+<arg>Sitio Principal</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:04:05.419" level="INFO">Page title is 'Sitio Principal'.</msg>
+<status status="PASS" starttime="20220927 22:04:05.415" endtime="20220927 22:04:05.419"/>
+</kw>
+<kw name="And Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath:${subjectField}</arg>
+<arg>${empty}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220927 22:04:05.421" level="INFO">Verifying element 'xpath://*[@id="msj_asunto"]' contains exact text ''.</msg>
+<status status="PASS" starttime="20220927 22:04:05.420" endtime="20220927 22:04:05.433"/>
+</kw>
+<kw name="Then the user writes a message" library="keywords">
+<arg>${subjectField}</arg>
+<arg>${subject}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:04:06.438" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:04:05.437" endtime="20220927 22:04:06.438"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath:${textBox}</arg>
+<arg>${msg}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:04:06.440" level="INFO">Typing text 'La automatización no es un juego' into text field 'xpath://*[@id="msj_asunto"]'.</msg>
+<status status="PASS" starttime="20220927 22:04:06.439" endtime="20220927 22:04:06.517"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:04:07.519" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:04:06.518" endtime="20220927 22:04:07.519"/>
+</kw>
+<status status="PASS" starttime="20220927 22:04:05.435" endtime="20220927 22:04:07.520"/>
+</kw>
+<doc>Writes text on the Subject text field</doc>
+<tag>usability, valid</tag>
+<status status="PASS" starttime="20220927 22:04:05.414" endtime="20220927 22:04:07.520"/>
+</test>
+<test id="s1-s2-s2-t6" name="Write the body" line="46">
+<kw name="Given Title Should Be" library="SeleniumLibrary">
+<arg>Sitio Principal</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220927 22:04:07.535" level="INFO">Page title is 'Sitio Principal'.</msg>
+<status status="PASS" starttime="20220927 22:04:07.523" endtime="20220927 22:04:07.536"/>
+</kw>
+<kw name="And Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath:${bodyField}</arg>
+<arg>${empty}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220927 22:04:07.538" level="INFO">Verifying element 'xpath://*[@id="msjcuerpo"]/div[1]' contains exact text ''.</msg>
+<status status="PASS" starttime="20220927 22:04:07.537" endtime="20220927 22:04:07.564"/>
+</kw>
+<kw name="Then the user writes a message" library="keywords">
+<arg>${bodyField}</arg>
+<arg>${body}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:04:08.568" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:04:07.567" endtime="20220927 22:04:08.569"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath:${textBox}</arg>
+<arg>${msg}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220927 22:04:08.571" level="INFO">Typing text 'Hola profe, 
+Este es un mensaje generado automáticamente gracias a Robot framework. :D
+Saludos!' into text field 'xpath://*[@id="msjcuerpo"]/div[1]'.</msg>
+<status status="PASS" starttime="20220927 22:04:08.569" endtime="20220927 22:04:08.769"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:04:09.770" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220927 22:04:08.770" endtime="20220927 22:04:09.771"/>
+</kw>
+<status status="PASS" starttime="20220927 22:04:07.565" endtime="20220927 22:04:09.772"/>
+</kw>
+<doc>Writes text on the Body text field</doc>
+<tag>usability, valid</tag>
+<status status="PASS" starttime="20220927 22:04:07.521" endtime="20220927 22:04:09.772"/>
+</test>
+<test id="s1-s2-s2-t7" name="Close the browser" line="59">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220927 22:04:12.775" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220927 22:04:09.775" endtime="20220927 22:04:12.776"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220927 22:04:12.777" endtime="20220927 22:04:12.838"/>
+</kw>
+<status status="PASS" starttime="20220927 22:04:09.773" endtime="20220927 22:04:12.839"/>
+</test>
+<status status="PASS" starttime="20220927 22:03:43.629" endtime="20220927 22:04:12.841"/>
+</suite>
+<status status="PASS" starttime="20220927 22:03:17.038" endtime="20220927 22:04:12.846"/>
+</suite>
+<status status="PASS" starttime="20220927 22:03:02.207" endtime="20220927 22:04:12.851"/>
+</suite>
+<statistics>
+<total>
+<stat pass="11" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">regression, valid</stat>
+<stat pass="5" fail="0" skip="0">usability</stat>
+<stat pass="2" fail="0" skip="0">usability, valid</stat>
+</tag>
+<suite>
+<stat pass="11" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Google Chrome">Tests.Google Chrome</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Search">Tests.Google Chrome.Search</stat>
+<stat pass="9" fail="0" skip="0" id="s1-s2" name="tecDigital">Tests.tecDigital</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2-s1" name="Access">Tests.tecDigital.Access</stat>
+<stat pass="7" fail="0" skip="0" id="s1-s2-s2" name="Email">Tests.tecDigital.Email</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
